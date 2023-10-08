@@ -17,6 +17,6 @@ data class Character (
 )
 
 data class CharacterResult(
-    @SerializedName("info") val info: String,
+    @SerializedName("info") val info: Info,
     @SerializedName("results") val results: List<Character>,
 )
