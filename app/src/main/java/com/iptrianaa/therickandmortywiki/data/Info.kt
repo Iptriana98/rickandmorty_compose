@@ -7,4 +7,6 @@ data class Info(
     @SerializedName("pages") val pages: Int,
     @SerializedName("next") val next: String?,
     @SerializedName("prev") val prev: String?,
-)
+){
+    fun getNext() = next?.split("=")?.get(1)?.toInt()
+}
