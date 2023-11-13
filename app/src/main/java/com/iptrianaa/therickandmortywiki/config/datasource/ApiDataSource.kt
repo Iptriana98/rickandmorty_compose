@@ -17,7 +17,7 @@ class ApiDataSource @Inject constructor(private val networkApi: NetworkApi): Pag
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Character> {
         return try {
             val page = params.key ?: 1
-            val response = networkApi.getCharacters()
+            val response = networkApi.getCharacters(page = page)
 
             LoadResult.Page(
                 data = response.body()!!.results,

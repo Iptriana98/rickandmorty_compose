@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -19,6 +20,7 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Card
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -34,6 +36,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight.Companion.Bold
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.paging.LoadState
 import androidx.paging.compose.collectAsLazyPagingItems
 import coil.compose.AsyncImage
 import com.iptrianaa.therickandmortywiki.ui.theme.TheRickAndMortyWikiTheme
@@ -61,23 +64,12 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(viewModel: MainViewModel) {
-    val pagin = viewModel.pager.collectAsLazyPagingItems()
-
-//    if (characters.isNullOrEmpty()) Box(
-//        modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center
-//    ) {
-//        CircularProgressIndicator(
-//            modifier = Modifier
-//                .height(40.dp)
-//                .width(40.dp)
-//        )
-//    }
-//    else
+    val paging = viewModel.pager.collectAsLazyPagingItems()
     LazyVerticalGrid(
         contentPadding = PaddingValues(4.dp),
         columns = GridCells.Fixed(2)
     ) {
-        items(pagin.itemSnapshotList) { items ->
+        items(items = paging.itemSnapshotList, key = { it!!.url }) { items ->
             val color = if (items?.status == "Alive") Color.Green else Color.Red
             Card(modifier = Modifier.padding(4.dp)) {
                 Column {
@@ -97,14 +89,17 @@ fun Greeting(viewModel: MainViewModel) {
                             .height(48.dp)
                     )
 
-                    Row(modifier = Modifier
-                        .align(Alignment.End)
-                        .padding(4.dp, 0.dp)) {
-                        Box(modifier = Modifier
-                            .size(8.dp)
-                            .clip(CircleShape)
-                            .background(color)
-                            .align(CenterVertically)
+                    Row(
+                        modifier = Modifier
+                            .align(Alignment.End)
+                            .padding(4.dp, 0.dp)
+                    ) {
+                        Box(
+                            modifier = Modifier
+                                .size(8.dp)
+                                .clip(CircleShape)
+                                .background(color)
+                                .align(CenterVertically)
                         )
                         Text(
                             text = "${items.status} - ${items.species}",
@@ -113,6 +108,54 @@ fun Greeting(viewModel: MainViewModel) {
                         )
                     }
                 }
+            }
+            when (val state = paging.loadState.refresh) { //FIRST LOAD
+                is LoadState.Error -> {
+                    //TODO Error Item
+                    //state.error to get error message
+                }
+
+                is LoadState.Loading -> { // Loading UI
+                    Column(
+                        modifier = Modifier
+                            .fillMaxWidth(),
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.Center,
+                    ) {
+                        Text(
+                            modifier = Modifier
+                                .padding(8.dp),
+                            text = "Refresh Loading"
+                        )
+
+                        CircularProgressIndicator(color = Color.Black)
+                    }
+                }
+
+                else -> {}
+            }
+
+
+            when (val state = paging.loadState.append) { // Pagination
+                is LoadState.Error -> {
+                    //TODO Pagination Error Item
+                    //state.error to get error message
+                }
+
+                is LoadState.Loading -> { // Pagination Loading UI
+                    Column(
+                        modifier = Modifier
+                            .fillMaxWidth(),
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.Center,
+                    ) {
+                        Text(text = "Pagination Loading")
+
+                        CircularProgressIndicator(color = Color.Black)
+                    }
+                }
+
+                else -> {}
             }
         }
     }
