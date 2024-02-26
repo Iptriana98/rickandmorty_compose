@@ -1,11 +1,8 @@
 package com.iptrianaa.therickandmortywiki
 
-import android.content.ContentValues.TAG
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
@@ -19,17 +16,14 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
-import androidx.compose.material3.TopAppBarColors
-import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.produceState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.iptrianaa.therickandmortywiki.config.CharacterService
-import com.iptrianaa.therickandmortywiki.data.Character
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.iptrianaa.therickandmortywiki.ui.composables.CharacterCard
+import com.iptrianaa.therickandmortywiki.ui.screens.MainViewModel
 import com.iptrianaa.therickandmortywiki.ui.theme.TheRickAndMortyWikiTheme
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
@@ -37,16 +31,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             TheRickAndMortyWikiTheme {
-                LaunchedEffect(key1 = true) {
-                    Retrofit.Builder().baseUrl("https://rickandmortyapi.com/api/")
-                        .addConverterFactory(GsonConverterFactory.create())
-                        .build()
-                        .create(CharacterService::class.java)
-                        .getCharacters()
-                        .results.forEach {
-                            Log.i(TAG, "character: $it")
-                        }
-                }
+
+                val viewModel: MainViewModel = viewModel()
+                val state by viewModel.state.observeAsState(MainViewModel.UIState())
 
                 Surface(
                     modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background
@@ -65,9 +52,9 @@ class MainActivity : ComponentActivity() {
                             horizontalArrangement = Arrangement.spacedBy(4.dp),
                             verticalArrangement = Arrangement.spacedBy(4.dp),
                         ) {
-//                            items(characters.value) { character ->
-//                                CharacterCard(character = character)
-//                            }
+                            items(state.characters) { character ->
+                                CharacterCard(character = character)
+                            }
                         }
                     }
                 }

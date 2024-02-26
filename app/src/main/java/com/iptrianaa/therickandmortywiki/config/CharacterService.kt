@@ -9,6 +9,6 @@ import retrofit2.http.GET
  * Copyright (c) 2023 by iptrianaa.
  */
 interface CharacterService {
-    @GET("character/")
+    @GET("api/character/")
     suspend fun getCharacters(): CharacterResult
 }
