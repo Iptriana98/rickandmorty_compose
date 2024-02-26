@@ -9,6 +9,6 @@ import retrofit2.http.GET
  * Copyright (c) 2023 by iptrianaa.
  */
 interface CharacterService {
-    @GET("https://rickandmortyapi.com/api/character")
+    @GET("character/")
     suspend fun getCharacters(): CharacterResult
 }
