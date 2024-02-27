@@ -22,7 +22,7 @@ import androidx.compose.ui.text.font.FontWeight.Companion.Bold
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
-import com.iptrianaa.therickandmortywiki.data.remote.character.Character
+import com.iptrianaa.therickandmortywiki.data.remote.datasources.character.Character
 
 /**
  * Created by iptrianaa on 2022-08-01

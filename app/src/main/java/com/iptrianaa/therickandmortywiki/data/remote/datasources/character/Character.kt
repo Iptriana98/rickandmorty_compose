@@ -1,8 +1,8 @@
-package com.iptrianaa.therickandmortywiki.data.remote.character
+package com.iptrianaa.therickandmortywiki.data.remote.datasources.character
 
 import com.google.gson.annotations.SerializedName
-import com.iptrianaa.therickandmortywiki.data.remote.Info
-import com.iptrianaa.therickandmortywiki.data.remote.Location
+import com.iptrianaa.therickandmortywiki.data.remote.datasources.Info
+import com.iptrianaa.therickandmortywiki.data.remote.datasources.Location
 
 data class Character (
     @SerializedName("id") val id: Int,
