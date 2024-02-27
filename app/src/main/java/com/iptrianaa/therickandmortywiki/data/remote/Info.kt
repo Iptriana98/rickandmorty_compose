@@ -1,4 +1,4 @@
-package com.iptrianaa.therickandmortywiki.data
+package com.iptrianaa.therickandmortywiki.data.remote
 
 import com.google.gson.annotations.SerializedName
 

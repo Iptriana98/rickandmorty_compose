@@ -4,13 +4,11 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.iptrianaa.therickandmortywiki.config.CharacterService
-import com.iptrianaa.therickandmortywiki.data.Character
+import com.iptrianaa.therickandmortywiki.data.config.RetrofitClient
+import com.iptrianaa.therickandmortywiki.data.remote.character.Character
 import kotlinx.coroutines.launch
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
-class MainViewModel : ViewModel() {
+class MainViewModel(private val client: RetrofitClient = RetrofitClient) : ViewModel() {
 
     private val _state = MutableLiveData(UIState())
         val state: LiveData<UIState> = _state
@@ -18,13 +16,7 @@ class MainViewModel : ViewModel() {
     init {
         viewModelScope.launch {
             _state.value = UIState(
-                Retrofit.Builder()
-                    .baseUrl("https://rickandmortyapi.com/")
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build()
-                    .create(CharacterService::class.java)
-                    .getCharacters()
-                    .results
+                client.api.getCharacters().results
             )
         }
     }
