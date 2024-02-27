@@ -1,6 +1,8 @@
-package com.iptrianaa.therickandmortywiki.config
+package com.iptrianaa.therickandmortywiki.data.config
 
-import com.iptrianaa.therickandmortywiki.data.CharacterResult
+import com.iptrianaa.therickandmortywiki.data.remote.character.CharacterResult
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
 /**
