@@ -1,4 +1,4 @@
-package com.iptrianaa.therickandmortywiki
+package com.iptrianaa.therickandmortywiki.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -22,8 +22,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.iptrianaa.therickandmortywiki.ui.composables.CharacterCard
-import com.iptrianaa.therickandmortywiki.ui.screens.MainViewModel
+import com.iptrianaa.therickandmortywiki.ui.screens.CharacterViewModel
 import com.iptrianaa.therickandmortywiki.ui.theme.TheRickAndMortyWikiTheme
+import org.koin.androidx.compose.koinViewModel
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
@@ -32,8 +33,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             TheRickAndMortyWikiTheme {
 
-                val viewModel: MainViewModel = viewModel()
-                val state by viewModel.state.observeAsState(MainViewModel.UIState())
+                val viewModel: CharacterViewModel = koinViewModel()
+                val state by viewModel.state.observeAsState(CharacterViewModel.UIState())
 
                 Surface(
                     modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background
