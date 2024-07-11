@@ -17,6 +17,8 @@ val dataModule = module {
             .build()
     }
     single { get<Retrofit>().create(CharacterService::class.java) }
+}
 
-    factoryOf(::CharacterRepo)
+val repositoryModule = module {
+    single { CharacterRepo(get()) }
 }
