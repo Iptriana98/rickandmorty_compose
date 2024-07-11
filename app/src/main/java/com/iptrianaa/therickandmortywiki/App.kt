@@ -2,6 +2,7 @@ package com.iptrianaa.therickandmortywiki
 
 import android.app.Application
 import com.iptrianaa.therickandmortywiki.data.di.dataModule
+import com.iptrianaa.therickandmortywiki.data.di.repositoryModule
 import com.iptrianaa.therickandmortywiki.di.appModule
 import com.iptrianaa.therickandmortywiki.di.viewModelModule
 import org.koin.android.ext.koin.androidContext
@@ -16,7 +17,7 @@ class App: Application() {
         startKoin {
             androidLogger()
             androidContext(this@App)
-            modules(appModule, viewModelModule, dataModule)
+            modules(appModule, dataModule, repositoryModule, viewModelModule)
         }
     }
 }

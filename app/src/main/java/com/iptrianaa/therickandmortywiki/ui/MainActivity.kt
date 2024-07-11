@@ -3,6 +3,7 @@ package com.iptrianaa.therickandmortywiki.ui
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.viewModels
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,15 +17,14 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.paging.compose.collectAsLazyPagingItems
 import com.iptrianaa.therickandmortywiki.ui.composables.CharacterCard
 import com.iptrianaa.therickandmortywiki.ui.screens.CharacterViewModel
 import com.iptrianaa.therickandmortywiki.ui.theme.TheRickAndMortyWikiTheme
 import org.koin.androidx.compose.koinViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
@@ -33,8 +33,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             TheRickAndMortyWikiTheme {
 
-                val viewModel: CharacterViewModel = koinViewModel()
-                val state by viewModel.state.observeAsState(CharacterViewModel.UIState())
+                val viewModel: CharacterViewModel by viewModel()
+                val characters = viewModel.characters.collectAsLazyPagingItems()
 
                 Surface(
                     modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background
@@ -53,8 +53,10 @@ class MainActivity : ComponentActivity() {
                             horizontalArrangement = Arrangement.spacedBy(4.dp),
                             verticalArrangement = Arrangement.spacedBy(4.dp),
                         ) {
-                            items(state.characters) { character ->
-                                CharacterCard(character = character)
+                            items(characters.itemCount) { index ->
+                                characters[index]?.let { character ->
+                                    CharacterCard(character = character)
+                                }
                             }
                         }
                     }

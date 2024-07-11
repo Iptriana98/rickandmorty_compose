@@ -4,6 +4,7 @@ import com.iptrianaa.therickandmortywiki.data.remote.datasources.character.Chara
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
+import retrofit2.http.Query
 
 /**
  * Interface used to connect to the API Rick and Morty
@@ -12,5 +13,5 @@ import retrofit2.http.GET
  */
 interface CharacterService {
     @GET("api/character/")
-    suspend fun getCharacters(): CharacterResult
+    suspend fun getCharacters(@Query("page") page: Int): CharacterResult
 }
