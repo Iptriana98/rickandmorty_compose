@@ -1,0 +1,182 @@
+[
+  {
+    "moduleId": "module org.jetbrains.kotlin:kotlin-stdlib:2.0.20",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.kotlin-kotlin-stdlib-2.0.20-commonMain-WPEnbA.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.runtime:runtime:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.runtime-runtime-1.7.0-alpha03-commonMain-Prcw9g.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.foundation:foundation:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.foundation-foundation-1.6.11-commonMain-dXXsCQ.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.material3:material3:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.material3-material3-1.6.11-commonMain-0hrc0g.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.ui-ui-1.7.0-alpha03-commonMain-TEPV3A.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.components:components-resources:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.components-components-resources-1.6.11-blockingMain-44UCqg.klib",
+    "sourceSetName": "blockingMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.components:components-resources:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.components-components-resources-1.6.11-commonMain-44UCqg.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.components:components-ui-tooling-preview:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.components-components-ui-tooling-preview-1.6.11-commonMain--i3iSw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-viewmodel:2.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.androidx.lifecycle-lifecycle-viewmodel-2.8.0-commonMain-ydSu5Q.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose:2.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.androidx.lifecycle-lifecycle-runtime-compose-2.8.0-commonMain-mvP4Vw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.navigation:navigation-compose:2.8.0-alpha09",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.androidx.navigation-navigation-compose-2.8.0-alpha09-commonMain-x_0rGg.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.animation:animation:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.animation-animation-1.7.0-alpha03-commonMain-td6DJg.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.material:material-icons-core:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.material-material-icons-core-1.6.11-commonMain-XjyzjQ.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.material:material-ripple:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.material-material-ripple-1.6.11-nativeMain-zsMeyQ.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.material:material-ripple:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.material-material-ripple-1.6.11-commonMain-8kHg7A.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-graphics:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.ui-ui-graphics-1.7.0-alpha03-commonMain-jV-3Nw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-text:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.ui-ui-text-1.7.0-alpha03-commonMain-x909gw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.runtime:runtime-saveable:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.runtime-runtime-saveable-1.7.0-alpha03-commonMain-dToAUQ.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-geometry:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.ui-ui-geometry-1.7.0-alpha03-commonMain-CwQ9Eg.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-unit:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.ui-ui-unit-1.7.0-alpha03-commonMain-pR3KgA.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-util:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.ui-ui-util-1.7.0-alpha03-commonMain-3-t5Ow.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.annotation-internal:annotation:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.annotation-internal-annotation-1.7.0-alpha03-commonMain-BD0V2w.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.kotlinx-kotlinx-coroutines-core-1.8.0-concurrentMain-UxhG-g.klib",
+    "sourceSetName": "concurrentMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.kotlinx-kotlinx-coroutines-core-1.8.0-commonMain-UxhG-g.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-runtime:2.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.androidx.lifecycle-lifecycle-runtime-2.8.0-commonMain-Cd-IGw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.core:core-bundle:1.0.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.androidx.core-core-bundle-1.0.0-commonMain-cb_PMQ.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-common:2.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.androidx.lifecycle-lifecycle-common-2.8.0-commonMain-_oGBew.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.androidx.lifecycle-lifecycle-viewmodel-compose-2.8.0-commonMain-207ecg.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.androidx.lifecycle-lifecycle-viewmodel-savedstate-2.8.0-commonMain-KnkPTw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.navigation:navigation-common:2.8.0-alpha09",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.androidx.navigation-navigation-common-2.8.0-alpha09-commonMain-u1QZpQ.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.navigation:navigation-runtime:2.8.0-alpha09",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.androidx.navigation-navigation-runtime-2.8.0-alpha09-commonMain-uQyv-Q.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.savedstate:savedstate:1.2.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.androidx.savedstate-savedstate-1.2.0-commonMain-xMdm-g.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.animation:animation-core:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.animation-animation-core-1.7.0-alpha03-commonMain-KAIxIA.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.foundation:foundation-layout:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.foundation-foundation-layout-1.7.0-alpha03-commonMain-Nkt8ew.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.collection-internal:collection:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.collection-internal-collection-1.7.0-alpha03-jbMain-5apXgA.klib",
+    "sourceSetName": "jbMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.collection-internal:collection:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/commonMain/org.jetbrains.compose.collection-internal-collection-1.7.0-alpha03-commonMain-5apXgA.klib",
+    "sourceSetName": "commonMain"
+  }
+]

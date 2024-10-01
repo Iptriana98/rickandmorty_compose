@@ -1,0 +1,392 @@
+[
+  {
+    "moduleId": "module org.jetbrains.compose.runtime:runtime:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.runtime-runtime-1.7.0-alpha03-uikitMain-8_0IzQ.klib",
+    "sourceSetName": "uikitMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.runtime:runtime:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.runtime-runtime-1.7.0-alpha03-nativeMain-Prcw9g.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.runtime:runtime:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.runtime-runtime-1.7.0-alpha03-jsNativeMain-Prcw9g.klib",
+    "sourceSetName": "jsNativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.runtime:runtime:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.runtime-runtime-1.7.0-alpha03-jbMain-Prcw9g.klib",
+    "sourceSetName": "jbMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.foundation:foundation:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.foundation-foundation-1.6.11-uikitMain-aASdXg.klib",
+    "sourceSetName": "uikitMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.foundation:foundation:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.foundation-foundation-1.6.11-darwinMain-aASdXg.klib",
+    "sourceSetName": "darwinMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.foundation:foundation:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.foundation-foundation-1.6.11-nativeMain-aASdXg.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.foundation:foundation:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.foundation-foundation-1.6.11-jsNativeMain-dXXsCQ.klib",
+    "sourceSetName": "jsNativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.foundation:foundation:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.foundation-foundation-1.6.11-skikoMain-dXXsCQ.klib",
+    "sourceSetName": "skikoMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.material3:material3:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.material3-material3-1.6.11-darwinMain-rFGDeg.klib",
+    "sourceSetName": "darwinMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.material3:material3:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.material3-material3-1.6.11-nativeMain-rFGDeg.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.material3:material3:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.material3-material3-1.6.11-jsNativeMain-0hrc0g.klib",
+    "sourceSetName": "jsNativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.material3:material3:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.material3-material3-1.6.11-skikoMain-0hrc0g.klib",
+    "sourceSetName": "skikoMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-1.7.0-alpha03-uikitMain-6CpM6g.klib",
+    "sourceSetName": "uikitMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-1.7.0-alpha03-darwinMain-6CpM6g.klib",
+    "sourceSetName": "darwinMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-1.7.0-alpha03-nativeMain-6CpM6g.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-1.7.0-alpha03-jsNativeMain-TEPV3A.klib",
+    "sourceSetName": "jsNativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-1.7.0-alpha03-skikoMain-TEPV3A.klib",
+    "sourceSetName": "skikoMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.components:components-resources:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.components-components-resources-1.6.11-iosMain-mlvQUA.klib",
+    "sourceSetName": "iosMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.components:components-resources:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.components-components-resources-1.6.11-nativeMain-mlvQUA.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.components:components-resources:1.6.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.components-components-resources-1.6.11-skikoMain-44UCqg.klib",
+    "sourceSetName": "skikoMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-viewmodel:2.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-viewmodel-2.8.0-nativeMain-ydSu5Q.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-viewmodel:2.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-viewmodel-2.8.0-nonJvmMain-ydSu5Q.klib",
+    "sourceSetName": "nonJvmMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.navigation:navigation-compose:2.8.0-alpha09",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.navigation-navigation-compose-2.8.0-alpha09-nativeMain-SWLWRA.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.navigation:navigation-compose:2.8.0-alpha09",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.navigation-navigation-compose-2.8.0-alpha09-jbMain-x_0rGg.klib",
+    "sourceSetName": "jbMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.collection-internal:collection:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.collection-internal-collection-1.7.0-alpha03-jsNativeMain-5apXgA.klib",
+    "sourceSetName": "jsNativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:atomicfu:0.23.2",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-atomicfu-0.23.2-nativeMain-yBS35w.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:atomicfu:0.23.2",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-atomicfu-0.23.2-commonMain-yBS35w.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-coroutines-core-1.8.0-nativeDarwinMain-sy5nKg.klib",
+    "sourceSetName": "nativeDarwinMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-coroutines-core-1.8.0-nativeMain-UxhG-g.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.animation:animation:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.animation-animation-1.7.0-alpha03-nativeMain-RuOUtg.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.animation:animation:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.animation-animation-1.7.0-alpha03-jsNativeMain-td6DJg.klib",
+    "sourceSetName": "jsNativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.annotation-internal:annotation:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.annotation-internal-annotation-1.7.0-alpha03-nonJvmMain-BD0V2w.klib",
+    "sourceSetName": "nonJvmMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.foundation:foundation-layout:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.foundation-foundation-layout-1.7.0-alpha03-uikitMain-GYqBaA.klib",
+    "sourceSetName": "uikitMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.foundation:foundation-layout:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.foundation-foundation-layout-1.7.0-alpha03-skikoMain-Nkt8ew.klib",
+    "sourceSetName": "skikoMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.foundation:foundation-layout:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.foundation-foundation-layout-1.7.0-alpha03-jsNativeMain-Nkt8ew.klib",
+    "sourceSetName": "jsNativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-text:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-text-1.7.0-alpha03-darwinMain-soKQsQ.klib",
+    "sourceSetName": "darwinMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-text:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-text-1.7.0-alpha03-nativeMain-soKQsQ.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-text:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-text-1.7.0-alpha03-jsNativeMain-x909gw.klib",
+    "sourceSetName": "jsNativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-text:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-text-1.7.0-alpha03-skikoMain-x909gw.klib",
+    "sourceSetName": "skikoMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-util:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-util-1.7.0-alpha03-uikitMain-V6MLCQ.klib",
+    "sourceSetName": "uikitMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-util:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-util-1.7.0-alpha03-nonJvmMain-3-t5Ow.klib",
+    "sourceSetName": "nonJvmMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.skiko:skiko:0.8.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.skiko-skiko-0.8.11-iosMain-SvRtdQ.klib",
+    "sourceSetName": "iosMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.skiko:skiko:0.8.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.skiko-skiko-0.8.11-uikitMain-SvRtdQ.klib",
+    "sourceSetName": "uikitMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.skiko:skiko:0.8.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.skiko-skiko-0.8.11-darwinMain-SvRtdQ.klib",
+    "sourceSetName": "darwinMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.skiko:skiko:0.8.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.skiko-skiko-0.8.11-nativeMain-cGXruw.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.skiko:skiko:0.8.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.skiko-skiko-0.8.11-nativeJsMain-cGXruw.klib",
+    "sourceSetName": "nativeJsMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.skiko:skiko:0.8.11",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.skiko-skiko-0.8.11-commonMain-cGXruw.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.animation:animation-core:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.animation-animation-core-1.7.0-alpha03-uikitMain-uWuQcA.klib",
+    "sourceSetName": "uikitMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.animation:animation-core:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.animation-animation-core-1.7.0-alpha03-jsNativeMain-KAIxIA.klib",
+    "sourceSetName": "jsNativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.animation:animation-core:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.animation-animation-core-1.7.0-alpha03-jbMain-KAIxIA.klib",
+    "sourceSetName": "jbMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-graphics:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-graphics-1.7.0-alpha03-nativeMain-aqjVUg.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-graphics:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-graphics-1.7.0-alpha03-skikoExcludingWebMain-jV-3Nw.klib",
+    "sourceSetName": "skikoExcludingWebMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-graphics:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-graphics-1.7.0-alpha03-jsNativeMain-jV-3Nw.klib",
+    "sourceSetName": "jsNativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-graphics:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-graphics-1.7.0-alpha03-skikoMain-jV-3Nw.klib",
+    "sourceSetName": "skikoMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-datetime:0.6.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-datetime-0.6.0-darwinMain-O4UcJA.klib",
+    "sourceSetName": "darwinMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-datetime:0.6.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-datetime-0.6.0-tzdbOnFilesystemMain-v1Leig.klib",
+    "sourceSetName": "tzdbOnFilesystemMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-datetime:0.6.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-datetime-0.6.0-tzfileMain-v1Leig.klib",
+    "sourceSetName": "tzfileMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-datetime:0.6.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-datetime-0.6.0-nativeMain-v1Leig.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-datetime:0.6.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-datetime-0.6.0-commonMain-v1Leig.klib",
+    "sourceSetName": "commonMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-common:2.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-common-2.8.0-nonJvmMain-_oGBew.klib",
+    "sourceSetName": "nonJvmMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-runtime:2.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-runtime-2.8.0-nativeMain-Cd-IGw.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-runtime:2.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-runtime-2.8.0-nonJvmMain-Cd-IGw.klib",
+    "sourceSetName": "nonJvmMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-uikit:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-uikit-1.7.0-alpha03-uikitMain-9bBLjg.klib",
+    "sourceSetName": "uikitMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-unit:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-unit-1.7.0-alpha03-jsNativeMain-pR3KgA.klib",
+    "sourceSetName": "jsNativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.compose.ui:ui-unit:1.7.0-alpha03",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.compose.ui-ui-unit-1.7.0-alpha03-jbMain-pR3KgA.klib",
+    "sourceSetName": "jbMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.core:core-bundle:1.0.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.core-core-bundle-1.0.0-nativeMain-cb_PMQ.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.core:core-bundle:1.0.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.core-core-bundle-1.0.0-jbMain-cb_PMQ.klib",
+    "sourceSetName": "jbMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-viewmodel-compose-2.8.0-jbMain-207ecg.klib",
+    "sourceSetName": "jbMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.lifecycle-lifecycle-viewmodel-savedstate-2.8.0-jbMain-KnkPTw.klib",
+    "sourceSetName": "jbMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.navigation:navigation-common:2.8.0-alpha09",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.navigation-navigation-common-2.8.0-alpha09-darwinMain-QHo9ow.klib",
+    "sourceSetName": "darwinMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.navigation:navigation-common:2.8.0-alpha09",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.navigation-navigation-common-2.8.0-alpha09-nativeMain-u1QZpQ.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.navigation:navigation-common:2.8.0-alpha09",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.navigation-navigation-common-2.8.0-alpha09-jbMain-u1QZpQ.klib",
+    "sourceSetName": "jbMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.navigation:navigation-runtime:2.8.0-alpha09",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.navigation-navigation-runtime-2.8.0-alpha09-nonJvmMain-uQyv-Q.klib",
+    "sourceSetName": "nonJvmMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.navigation:navigation-runtime:2.8.0-alpha09",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.navigation-navigation-runtime-2.8.0-alpha09-jbMain-uQyv-Q.klib",
+    "sourceSetName": "jbMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.androidx.savedstate:savedstate:1.2.0",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.androidx.savedstate-savedstate-1.2.0-nonJvmMain-xMdm-g.klib",
+    "sourceSetName": "nonJvmMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-serialization-core:1.6.2",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-serialization-core-1.6.2-nativeMain-0z2eOA.klib",
+    "sourceSetName": "nativeMain"
+  },
+  {
+    "moduleId": "module org.jetbrains.kotlinx:kotlinx-serialization-core:1.6.2",
+    "file": "/Users/ibrahinperez/StudioProjects/rickandmorty_compose/composeApp/build/kotlinTransformedMetadataLibraries/nativeMain/org.jetbrains.kotlinx-kotlinx-serialization-core-1.6.2-commonMain-0z2eOA.klib",
+    "sourceSetName": "commonMain"
+  }
+]
