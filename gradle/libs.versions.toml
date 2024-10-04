@@ -18,6 +18,7 @@ navigation = "2.8.0-alpha09"
 koin = "3.5.6"
 koinCompose = "1.1.5"
 koinComposeViewModel = "1.2.0-Beta4"
+ktor = "2.3.12"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -39,9 +40,17 @@ koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koinComp
 koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel", version.ref = "koinComposeViewModel" }
 koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
 
+# Ktor
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-negotation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor"}
+ktor-client-serialization = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor"}
+
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinSerialization = {id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
