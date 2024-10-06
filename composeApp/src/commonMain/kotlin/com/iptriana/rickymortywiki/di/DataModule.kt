@@ -1,6 +1,8 @@
 package com.iptriana.rickymortywiki.di
 
+import com.iptriana.rickymortywiki.data.RepositoryImpl
 import com.iptriana.rickymortywiki.data.remote.ApiService
+import com.iptriana.rickymortywiki.domain.Repository
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.DefaultRequest
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
@@ -27,4 +29,5 @@ val dataModule = module {
         }
     }
     factoryOf(::ApiService)
+    factory<Repository> { RepositoryImpl(get()) }
 }
