@@ -1,5 +1,6 @@
 package com.iptriana.rickymortywiki.data.remote.response
 
+import com.iptriana.rickymortywiki.domain.model.CharacterModel
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -11,4 +12,11 @@ data class CharacterResponse(
     val type: String,
     val gender: String,
     val image: String
-)
+){
+    fun toDomain() = CharacterModel(
+        id = id,
+        name = name,
+        isAlive = status == "Alive",
+        image = image
+    )
+}
