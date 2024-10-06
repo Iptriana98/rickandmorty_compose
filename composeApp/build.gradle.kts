@@ -55,6 +55,8 @@ kotlin {
             implementation(libs.ktor.client.negotation)
             implementation(libs.ktor.client.serialization)
             implementation(libs.viewmodel.compose)
+            implementation(libs.coil.compose)
+            implementation(libs.coil.network.ktor)
         }
 
         iosMain.dependencies {
