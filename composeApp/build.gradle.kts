@@ -1,4 +1,3 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
@@ -31,7 +30,7 @@ kotlin {
     
     sourceSets {
 
-        task("testClasses")
+
         
         androidMain.dependencies {
             implementation(compose.preview)
@@ -55,6 +54,9 @@ kotlin {
             implementation(libs.ktor.client.core)
             implementation(libs.ktor.client.negotation)
             implementation(libs.ktor.client.serialization)
+            implementation(libs.viewmodel.compose)
+            implementation(libs.coil.compose)
+            implementation(libs.coil.network.ktor)
         }
 
         iosMain.dependencies {
