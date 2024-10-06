@@ -30,8 +30,6 @@ kotlin {
     }
     
     sourceSets {
-
-        task("testClasses")
         
         androidMain.dependencies {
             implementation(compose.preview)
@@ -55,6 +53,7 @@ kotlin {
             implementation(libs.ktor.client.core)
             implementation(libs.ktor.client.negotation)
             implementation(libs.ktor.client.serialization)
+            implementation(libs.viewmodel.compose)
         }
 
         iosMain.dependencies {
