@@ -51,19 +51,13 @@ fun CharactersScreen() {
     val charactersViewModel = koinViewModel<CharactersViewModel>()
     val characterState by charactersViewModel.state.collectAsState()
     val characters = characterState.characters.collectAsLazyPagingItems()
-
     CharacterGirdList(characters = characters, characterState = characterState)
 }
 
 @Composable
 fun CharacterGirdList(characterState: CharacterState, characters: LazyPagingItems<CharacterModel>) {
     LazyVerticalGrid(
-        modifier = Modifier.fillMaxSize().padding(
-            start = 16.dp,
-            top = 16.dp,
-            end = 16.dp,
-            bottom = 0.dp
-        ),
+        modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp),
         columns = GridCells.Fixed(2),
         horizontalArrangement = Arrangement.spacedBy(16.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp),
@@ -98,10 +92,10 @@ fun CharacterGirdList(characterState: CharacterState, characters: LazyPagingItem
                         CharacterItemList(character = character)
                     }
                 }
-                if (characters.loadState.refresh is LoadState.Loading) {
+                if (characters.loadState.append is LoadState.Loading) {
                     item(span = { GridItemSpan(maxLineSpan) }) {
                         Box(
-                            modifier = Modifier.fillMaxSize(),
+                            modifier = Modifier.fillMaxHeight().height(100.dp).fillMaxWidth(),
                             contentAlignment = Alignment.Center
                         ) {
                             CircularProgressIndicator(Modifier.size(64.dp), color = Color.Red)
@@ -149,20 +143,20 @@ fun CharacterItemList(character: CharacterModel) {
             )
         ) {
             Text(
-                modifier = Modifier.fillMaxSize().padding(16.dp),
+                modifier = Modifier.align(Alignment.BottomStart).padding(16.dp),
                 text = character.name,
-                fontSize = 24.sp,
+                fontSize = 18.sp,
                 color = Color.White,
                 maxLines = 1,
-                overflow = TextOverflow.Ellipsis
+                overflow = TextOverflow.Ellipsis,
             )
-        } // )){
+        }
     }
 }
 
 @Composable
 fun CharacterOfTheDay(characterModel: CharacterModel? = null) {
-    Card(modifier = Modifier.fillMaxWidth().height(400.dp), shape = RoundedCornerShape(12)) {
+    Card(modifier = Modifier.fillMaxWidth().height(400.dp).padding(vertical = 16.dp), shape = RoundedCornerShape(12)) {
         if (characterModel == null) {
             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                 CircularProgressIndicator(Modifier.background(Color.Green))
@@ -199,7 +193,8 @@ fun CharacterOfTheDay(characterModel: CharacterModel? = null) {
                     color = Color.White,
                     overflow = TextOverflow.Ellipsis,
                     modifier = Modifier
-                        .padding(horizontal = 24.dp, vertical = 16.dp)
+                        .padding(horizontal = 24.dp, vertical = 24.dp)
+                        .fillMaxHeight()
                         .vertical()
                         .rotate(-90f)
                 )
