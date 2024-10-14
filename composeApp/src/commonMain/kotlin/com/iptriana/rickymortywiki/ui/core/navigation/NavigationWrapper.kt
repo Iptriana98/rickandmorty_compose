@@ -13,7 +13,7 @@ fun NavigationWrapper() {
 
     NavHost(navController = navController, startDestination = "home"){
         composable(Routes.Home.route) {
-            HomeScreen(modifier = Modifier)
+            HomeScreen()
         }
     }
 }
