@@ -4,10 +4,12 @@ import androidx.paging.PagingConfig
 import app.cash.paging.Pager
 import app.cash.paging.PagingData
 import com.iptriana.rickymortywiki.data.database.RickyMortyDatabase
+import com.iptriana.rickymortywiki.data.database.entity.CharacterOfTheDayEntity
 import com.iptriana.rickymortywiki.data.remote.ApiService
 import com.iptriana.rickymortywiki.data.remote.paging.CharacterPagingSource
 import com.iptriana.rickymortywiki.domain.Repository
 import com.iptriana.rickymortywiki.domain.model.CharacterModel
+import com.iptriana.rickymortywiki.domain.model.CharacterOfTheDayModel
 import kotlinx.coroutines.flow.Flow
 
 class RepositoryImpl(
@@ -26,8 +28,12 @@ class RepositoryImpl(
         Pager(config = PagingConfig(pageSize = MAX_ITEMS, prefetchDistance = PREFETCH_DISTANCE),
             pagingSourceFactory = { characterPagingSource }).flow
 
-    override suspend fun getCharacterDB() {
-        database.getPreferencesDao().getCharacterOfTheDay()
+    override suspend fun getCharacterDB(): CharacterOfTheDayModel? =
+        database.getPreferencesDao().getCharacterOfTheDay()?.toDomain()
+
+    override suspend fun saveCharacterOfTheDay(character: CharacterOfTheDayModel) {
+        database.getPreferencesDao().saveCharacterOfTheDay(character.toEntity())
     }
+
 
 }
