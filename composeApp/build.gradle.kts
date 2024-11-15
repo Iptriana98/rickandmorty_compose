@@ -7,9 +7,14 @@ plugins {
     alias(libs.plugins.jetbrainsCompose)
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.kotlinSerialization)
+    alias(libs.plugins.kspCompose)
 }
 
 kotlin {
+    sourceSets.commonMain {
+        kotlin.srcDir("build/generated/ksp/metadata")
+    }
+
     androidTarget {
         @OptIn(ExperimentalKotlinGradlePluginApi::class)
         compilerOptions {
@@ -59,6 +64,9 @@ kotlin {
             implementation(libs.coil.network.ktor)
             implementation(libs.paging.common)
             implementation(libs.paging.compose.common)
+            implementation(libs.kotlinx.datetime)
+            implementation(libs.room.runtime)
+            implementation(libs.androidx.sqlite.bundle)
         }
 
         iosMain.dependencies {
@@ -104,3 +112,14 @@ android {
     }
 }
 
+ksp {
+    arg("room.schemaLocation", "$projectDir/schemas")
+}
+
+dependencies {
+    add("kspCommonMainMetadata", libs.room.compiler)
+    add("kspAndroid", libs.room.compiler)
+    add("kspIosX64", libs.room.compiler)
+    add("kspIosArm64", libs.room.compiler)
+    add("kspIosSimulatorArm64", libs.room.compiler)
+}
