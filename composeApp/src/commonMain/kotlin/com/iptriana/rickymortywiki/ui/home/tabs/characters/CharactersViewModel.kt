@@ -2,6 +2,7 @@ package com.iptriana.rickymortywiki.ui.home.tabs.characters
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import androidx.paging.cachedIn
 import com.iptriana.rickymortywiki.domain.Repository
 import com.iptriana.rickymortywiki.domain.model.CharacterModel
 import com.iptriana.rickymortywiki.domain.useCases.GetRandomCharacter
@@ -32,6 +33,6 @@ class CharactersViewModel(
     }
 
     private fun getAllCharacters() {
-        _state.update { state -> state.copy(characters = repository.getAllCharacters()) }
+        _state.update { state -> state.copy(characters = repository.getAllCharacters().cachedIn(viewModelScope)) }
     }
 }
