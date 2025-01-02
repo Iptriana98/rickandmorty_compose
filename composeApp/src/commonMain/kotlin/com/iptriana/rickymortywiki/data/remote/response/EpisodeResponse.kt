@@ -22,7 +22,8 @@ data class EpisodeResponse(
         characters = characters.map { url -> url.substringAfter("/") },
         url = url,
         created = created,
-        season =
+        season = getSeasonFromEpisodeCode(url),
+        videoUrl = getUrlFromSeason(getSeasonFromEpisodeCode(url))
     )
 
     private fun getUrlFromSeason(season: SeasonEpisode): String = when (season) {
