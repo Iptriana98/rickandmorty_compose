@@ -3,6 +3,7 @@ package com.iptriana.rickymortywiki.di
 import com.iptriana.rickymortywiki.data.RepositoryImpl
 import com.iptriana.rickymortywiki.data.remote.ApiService
 import com.iptriana.rickymortywiki.data.remote.paging.CharacterPagingSource
+import com.iptriana.rickymortywiki.data.remote.paging.EpisodesPagingSource
 import com.iptriana.rickymortywiki.domain.Repository
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.DefaultRequest
@@ -30,6 +31,7 @@ val dataModule = module {
         }
     }
     factoryOf(::ApiService)
-    factory<Repository> { RepositoryImpl(get(), get(), get()) }
+    factory<Repository> { RepositoryImpl(get(), get(), get(), get()) }
     factoryOf(::CharacterPagingSource)
+    factoryOf(::EpisodesPagingSource)
 }
