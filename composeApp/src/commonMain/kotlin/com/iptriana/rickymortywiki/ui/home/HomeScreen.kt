@@ -8,7 +8,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
@@ -17,13 +16,13 @@ import com.iptriana.rickymortywiki.ui.core.navigation.bottom_navigation.BottomBa
 import com.iptriana.rickymortywiki.ui.core.navigation.bottom_navigation.NavigationBottomWrapper
 
 @Composable
-fun HomeScreen() {
+fun HomeScreen(mainNavController: NavHostController) {
     val items = listOf(BottomBarItem.Episodes(), BottomBarItem.Characters())
     val navController = rememberNavController()
 
     Scaffold(bottomBar = { BottomNavigation(items, navController) }) { padding ->
         Box(modifier = Modifier.padding(padding)) {
-            NavigationBottomWrapper(navController)
+            NavigationBottomWrapper(navController, mainNavController)
         }
     }
 }
