@@ -5,7 +5,6 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -47,15 +46,19 @@ import rickymortywiki.composeapp.generated.resources.rickface
 
 @OptIn(KoinExperimentalAPI::class)
 @Composable
-fun CharactersScreen() {
+fun CharactersScreen(navigateToCharacterDetail: (CharacterModel) -> Unit) {
     val charactersViewModel = koinViewModel<CharactersViewModel>()
     val characterState by charactersViewModel.state.collectAsState()
     val characters = characterState.characters.collectAsLazyPagingItems()
-    CharacterGirdList(characters = characters, characterState = characterState)
+    CharacterGirdList(characters = characters, characterState = characterState, navigateToCharacterDetail = navigateToCharacterDetail)
 }
 
 @Composable
-fun CharacterGirdList(characterState: CharacterState, characters: LazyPagingItems<CharacterModel>) {
+fun CharacterGirdList(
+    characterState: CharacterState,
+    characters: LazyPagingItems<CharacterModel>,
+    navigateToCharacterDetail: (CharacterModel) -> Unit
+) {
     LazyVerticalGrid(
         modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp),
         columns = GridCells.Fixed(2),
@@ -89,7 +92,9 @@ fun CharacterGirdList(characterState: CharacterState, characters: LazyPagingItem
             else -> {
                 items(characters.itemCount) { index ->
                     characters[index]?.let { character ->
-                        CharacterItemList(character = character)
+                        CharacterItemList(character = character){ characterModel ->
+                            navigateToCharacterDetail(characterModel)
+                        }
                     }
                 }
                 if (characters.loadState.append is LoadState.Loading) {
@@ -109,13 +114,13 @@ fun CharacterGirdList(characterState: CharacterState, characters: LazyPagingItem
 }
 
 @Composable
-fun CharacterItemList(character: CharacterModel) {
+fun CharacterItemList(character: CharacterModel, onItemSelected: (CharacterModel) -> Unit = {}) {
     Box(
         modifier = Modifier.clip(RoundedCornerShape(24))
             .border(2.dp, Color.Green, shape = RoundedCornerShape(0, 24, 0, 24))
             .fillMaxWidth()
             .height(150.dp)
-            .clickable { },
+            .clickable { onItemSelected(character) },
         contentAlignment = Alignment.BottomCenter
     ) {
         AsyncImage(
