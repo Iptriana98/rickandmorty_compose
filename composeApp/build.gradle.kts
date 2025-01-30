@@ -117,6 +117,8 @@ ksp {
 }
 
 dependencies {
+    implementation(libs.androidx.ui.graphics.android)
+    implementation(libs.androidx.foundation.layout.android)
     add("kspCommonMainMetadata", libs.room.compiler)
     add("kspAndroid", libs.room.compiler)
     add("kspIosX64", libs.room.compiler)
