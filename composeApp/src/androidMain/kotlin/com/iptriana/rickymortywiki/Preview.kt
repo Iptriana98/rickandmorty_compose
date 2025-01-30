@@ -11,9 +11,11 @@ class Preview {
     fun PreviewApp() {
         CharacterOfTheDay(CharacterModel(
             id = 1,
-            name = "Rick Sanchez",
             isAlive = true,
-            image = "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+            name = "Rick Sanchez",
+            image = "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+            species = "HUMAN",
+            gender = "MALE",
         ))
     }
 }

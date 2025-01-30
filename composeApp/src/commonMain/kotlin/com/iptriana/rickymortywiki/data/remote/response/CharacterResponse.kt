@@ -17,6 +17,8 @@ data class CharacterResponse(
         id = id,
         name = name,
         isAlive = status == "Alive",
-        image = image
+        image = image,
+        species = species,
+        gender = gender
     )
 }
