@@ -11,7 +11,7 @@ androidx-espresso-core = "3.6.1"
 androidx-lifecycle = "2.8.0"
 androidx-material = "1.12.0"
 androidx-test-junit = "1.2.1"
-compose-plugin = "1.6.11"
+compose-plugin = "1.7.0-alpha02"
 junit = "4.13.2"
 kotlin = "2.0.20"
 navigation = "2.8.0-alpha09"
@@ -26,6 +26,8 @@ kotlinx-datetime = "0.6.0"
 roomCommon = "2.7.0-alpha07"
 ksp = "2.0.20-1.0.24"
 androidx-sqliteBundle = "2.5.0-alpha07"
+uiGraphicsAndroid = "1.7.6"
+foundationLayoutAndroid = "1.7.6"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -74,6 +76,8 @@ room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomCommon" }
 room-runtime-android = { group = "androidx.room", name = "room-runtime-android ", version.ref = "roomCommon" }
 androidx-sqlite-bundle = { group = "androidx.sqlite", name = "sqlite-bundled", version.ref = "androidx-sqliteBundle" }
+androidx-ui-graphics-android = { group = "androidx.compose.ui", name = "ui-graphics-android", version.ref = "uiGraphicsAndroid" }
+androidx-foundation-layout-android = { group = "androidx.compose.foundation", name = "foundation-layout-android", version.ref = "foundationLayoutAndroid" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

@@ -11,12 +11,18 @@ data class CharacterResponse(
     val species: String,
     val type: String,
     val gender: String,
-    val image: String
+    val image: String,
+    val origin: OriginResponse,
+    val episode: List<String>,
 ){
     fun toDomain() = CharacterModel(
         id = id,
         name = name,
         isAlive = status == "Alive",
-        image = image
+        image = image,
+        species = species,
+        gender = gender,
+        origin = origin.name,
+        episodes = episode.map { it.substringAfterLast("/") }
     )
 }

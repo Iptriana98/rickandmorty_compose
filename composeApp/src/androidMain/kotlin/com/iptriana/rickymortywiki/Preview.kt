@@ -9,11 +9,13 @@ class Preview {
     @Preview
     @Composable
     fun PreviewApp() {
-        CharacterOfTheDay(CharacterModel(
-            id = 1,
-            name = "Rick Sanchez",
-            isAlive = true,
-            image = "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-        ))
+//        CharacterOfTheDay(CharacterModel(
+//            id = 1,
+//            isAlive = true,
+//            name = "Rick Sanchez",
+//            image = "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+//            species = "HUMAN",
+//            gender = "MALE",
+//        ))
     }
 }
