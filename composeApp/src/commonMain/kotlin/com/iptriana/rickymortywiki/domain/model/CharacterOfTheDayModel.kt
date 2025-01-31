@@ -1,6 +1,8 @@
 package com.iptriana.rickymortywiki.domain.model
 
 import com.iptriana.rickymortywiki.data.database.entity.CharacterOfTheDayEntity
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
 
 data class CharacterOfTheDayModel (
     val characterModel: CharacterModel,
@@ -15,6 +17,8 @@ data class CharacterOfTheDayModel (
             selectedDate = selectedDate,
             species = characterModel.species,
             gender = characterModel.gender,
+            origin = characterModel.origin,
+            episodes = Json.encodeToString(characterModel.episodes)
         )
     }
 }
