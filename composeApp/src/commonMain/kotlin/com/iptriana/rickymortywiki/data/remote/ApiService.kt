@@ -2,6 +2,7 @@ package com.iptriana.rickymortywiki.data.remote
 
 import com.iptriana.rickymortywiki.data.remote.response.CharacterResponse
 import com.iptriana.rickymortywiki.data.remote.response.CharacterWrapperResponse
+import com.iptriana.rickymortywiki.data.remote.response.EpisodeResponse
 import com.iptriana.rickymortywiki.data.remote.response.EpisodesWrapperResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
@@ -19,4 +20,12 @@ class ApiService(private val client: HttpClient) {
     suspend fun getAllEpisodes(page: Int): EpisodesWrapperResponse = client.get("api/episode"){
         parameter("page", page)
     }.body()
+
+    suspend fun getEpisodes(episodes: String): List<EpisodeResponse> {
+        return client.get("api/episode/$episodes").body()
+    }
+
+    suspend fun getSingleEpisode(episodes: String): EpisodeResponse {
+        return client.get("api/episode/$episodes").body()
+    }
 }

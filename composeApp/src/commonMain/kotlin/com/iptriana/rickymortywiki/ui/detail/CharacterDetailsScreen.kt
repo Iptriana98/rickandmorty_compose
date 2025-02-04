@@ -5,14 +5,19 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -27,6 +32,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
 import com.iptriana.rickymortywiki.domain.model.CharacterModel
+import com.iptriana.rickymortywiki.domain.model.EpisodeModel
 import com.iptriana.rickymortywiki.ui.core.ex.aliveBorder
 import org.jetbrains.compose.resources.painterResource
 import org.koin.compose.viewmodel.koinViewModel
@@ -42,8 +48,56 @@ fun CharacterDetailsScreen(characterModel: CharacterModel) {
     val characterDetailViewModel =
         koinViewModel<CharacterDetailViewModel>(parameters = { parametersOf(characterModel) })
     val state by characterDetailViewModel.uiState.collectAsState()
-    Column(modifier = Modifier.fillMaxSize().background(Color.White)) {
+    val scrollState = rememberScrollState()
+    Column(modifier = Modifier.fillMaxSize().background(Color.White).verticalScroll(scrollState)) {
         MainHeader(state.characterModel)
+        CharacterInformation(state.characterModel)
+        CharacterEpisodeList(state.episodes)
+    }
+}
+
+@Composable
+fun CharacterEpisodeList(episodes: List<EpisodeModel>?) {
+    ElevatedCard(modifier = Modifier.padding(horizontal = 16.dp).fillMaxWidth()){
+        Box(contentAlignment = Alignment.Center) {
+            if (episodes == null) {
+                CircularProgressIndicator(color = Color.Green)
+            }else {
+                Column {
+                    episodes.forEach {
+                        EpisodeItem(it)
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun EpisodeItem(it: EpisodeModel) {
+    Column {
+        Text(it.name, color = Color.Black, fontSize = 16.sp, fontWeight = FontWeight.Bold)
+        Text(it.episode, color = Color.Black, fontSize = 16.sp)
+    }
+}
+
+@Composable
+fun CharacterInformation(characterModel: CharacterModel) {
+    ElevatedCard(modifier = Modifier.padding(horizontal = 16.dp).fillMaxWidth()){
+        Column(modifier = Modifier.padding(16.dp)) {
+            Text("About the character", color = Color.Black, fontSize = 20.sp, fontWeight = FontWeight.Bold)
+            Spacer(Modifier.height(16.dp))
+            InformationDetail("Gender: ", characterModel.gender)
+            InformationDetail("Origin: ", characterModel.origin)
+        }
+    }
+}
+
+@Composable
+fun InformationDetail(title: String, detail: String){
+    Row {
+        Text(title, color = Color.Black, fontSize = 16.sp, fontWeight = FontWeight.Bold)
+        Text(detail, color = Color.Green, fontSize = 16.sp)
     }
 }
 
