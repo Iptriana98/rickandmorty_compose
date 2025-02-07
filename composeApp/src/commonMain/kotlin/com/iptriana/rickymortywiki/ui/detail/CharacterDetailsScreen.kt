@@ -108,7 +108,7 @@ fun EpisodeItem(episode: EpisodeModel) {
         Text(episode.name, color = Green, fontSize = 16.sp, fontWeight = FontWeight.Bold)
         Text(episode.episode, color = DefaultTextColor, fontSize = 16.sp)
     }
-}
+} 
 
 @Composable
 fun CharacterInformation(characterModel: CharacterModel) {
