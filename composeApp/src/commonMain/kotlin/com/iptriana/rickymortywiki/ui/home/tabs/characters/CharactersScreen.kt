@@ -5,6 +5,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -29,6 +30,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toolingGraphicsLayer
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -39,6 +41,9 @@ import app.cash.paging.compose.collectAsLazyPagingItems
 import coil3.compose.AsyncImage
 import com.iptriana.rickymortywiki.domain.model.CharacterModel
 import com.iptriana.rickymortywiki.ui.core.ex.vertical
+import com.iptriana.rickymortywiki.ui.theme.BackgroundPrimaryColor
+import com.iptriana.rickymortywiki.ui.theme.DefaultTextColor
+import com.iptriana.rickymortywiki.ui.theme.Green
 import org.jetbrains.compose.resources.painterResource
 import org.koin.compose.viewmodel.koinViewModel
 import org.koin.core.annotation.KoinExperimentalAPI
@@ -61,13 +66,23 @@ fun CharacterGirdList(
     navigateToCharacterDetail: (CharacterModel) -> Unit
 ) {
     LazyVerticalGrid(
-        modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp).toolingGraphicsLayer(),
+        modifier = Modifier.fillMaxSize().background(BackgroundPrimaryColor).padding(horizontal = 16.dp).toolingGraphicsLayer(),
         columns = GridCells.Fixed(2),
         horizontalArrangement = Arrangement.spacedBy(16.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
         item(span = { GridItemSpan(maxLineSpan) }) {
             characterState.characterOfTheDay?.let {
+                Text(
+                    modifier = Modifier.padding(16.dp),
+                    text = "Characters",
+                    fontSize = 24.sp,
+                    color = DefaultTextColor,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                    fontWeight = FontWeight.SemiBold
+                )
+                Spacer(modifier = Modifier.height(6.dp))
                 CharacterOfTheDay(characterModel = it)
             }
         }
@@ -76,7 +91,7 @@ fun CharacterGirdList(
                 // Initial loading
                 item(span = { GridItemSpan(maxLineSpan) }) {
                     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                        CircularProgressIndicator(Modifier.size(64.dp), color = Color.Red)
+                        CircularProgressIndicator(Modifier.size(64.dp), color = Green)
                     }
                 }
             }
@@ -118,7 +133,7 @@ fun CharacterGirdList(
 fun CharacterItemList(character: CharacterModel, onItemSelected: (CharacterModel) -> Unit = {}) {
     Box(
         modifier = Modifier.clip(RoundedCornerShape(24))
-            .border(2.dp, Color.Green, shape = RoundedCornerShape(0, 24, 0, 24))
+            .border(2.dp, Green, shape = RoundedCornerShape(0, 24, 0, 24))
             .fillMaxWidth()
             .height(150.dp)
             .clickable { onItemSelected(character) },
@@ -165,11 +180,11 @@ fun CharacterOfTheDay(characterModel: CharacterModel? = null) {
     Card(modifier = Modifier.fillMaxWidth().height(400.dp).padding(vertical = 16.dp), shape = RoundedCornerShape(12)) {
         if (characterModel == null) {
             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                CircularProgressIndicator(Modifier.background(Color.Green))
+                CircularProgressIndicator(Modifier.background(Green))
             }
         } else {
             Box(contentAlignment = Alignment.BottomStart) {
-                Box(modifier = Modifier.fillMaxSize().background(Color.Green.copy(alpha = 0.5f)))
+                Box(modifier = Modifier.fillMaxSize().background(Green.copy(alpha = 0.5f)))
                 AsyncImage(
                     modifier = Modifier.fillMaxSize(),
                     contentDescription = null,
