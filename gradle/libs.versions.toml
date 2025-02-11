@@ -28,6 +28,7 @@ ksp = "2.0.20-1.0.24"
 androidx-sqliteBundle = "2.5.0-alpha07"
 uiGraphicsAndroid = "1.7.6"
 foundationLayoutAndroid = "1.7.6"
+core-splashscreen = "1.0.1"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -78,6 +79,9 @@ room-runtime-android = { group = "androidx.room", name = "room-runtime-android "
 androidx-sqlite-bundle = { group = "androidx.sqlite", name = "sqlite-bundled", version.ref = "androidx-sqliteBundle" }
 androidx-ui-graphics-android = { group = "androidx.compose.ui", name = "ui-graphics-android", version.ref = "uiGraphicsAndroid" }
 androidx-foundation-layout-android = { group = "androidx.compose.foundation", name = "foundation-layout-android", version.ref = "foundationLayoutAndroid" }
+
+# Splash android
+core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "core-splashscreen" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
