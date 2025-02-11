@@ -1,12 +1,19 @@
 package com.iptriana.rickymortywiki.ui.core.navigation.bottom_navigation
 
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import com.iptriana.rickymortywiki.ui.core.navigation.Routes
+import org.jetbrains.compose.resources.painterResource
+import rickymortywiki.composeapp.generated.resources.Res
+import rickymortywiki.composeapp.generated.resources.ic_characters
+import rickymortywiki.composeapp.generated.resources.ic_player
 
 sealed class BottomBarItem {
     abstract val route: String
@@ -17,15 +24,23 @@ sealed class BottomBarItem {
         override val route: String = Routes.Episodes.route,
         override val title: String = "Episodes",
         override val icon: @Composable () -> Unit = {
-            Icon(imageVector = Icons.Default.Home, contentDescription = "Episodes")
+            Icon(
+                painter = painterResource(Res.drawable.ic_player),
+                contentDescription = "Episodes",
+                modifier = Modifier.size(24.dp)
+            )
         }
-    ): BottomBarItem()
+    ) : BottomBarItem()
 
     data class Characters(
         override val route: String = Routes.Characters.route,
         override val title: String = "Characters",
         override val icon: @Composable () -> Unit = {
-            Icon(imageVector = Icons.Default.Person, contentDescription = "Characters")
+            Icon(
+                painter = painterResource(Res.drawable.ic_characters),
+                contentDescription = "Characters",
+                modifier = Modifier.size(24.dp)
+            )
         }
-    ): BottomBarItem()
+    ) : BottomBarItem()
 }
